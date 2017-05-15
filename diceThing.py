@@ -18,49 +18,50 @@ while(True):
 
     print("\nWhat is your race Adventurer?\n")
     race = input()
-    if (race == "Human"):
+    race_parse = race.lowercase()
+    if (race_parse == "human"):
         print("Str :",stats[0])
         print("Dex :",stats[1])
         print("Con :",stats[2])
         print("Int :",stats[3])
         print("Wis :",stats[4])
         print("Cha :",stats[5])
-    elif (race == "Dwarf"):
+    elif (race_parse == "dwarf"):
         print("Str :",stats[0])
         print("Dex :",stats[1])
         print("Con :",stats[2]+2)
         print("Int :",stats[3])
         print("Wis :",stats[4])
         print("Cha :",stats[5]-2)
-    elif (race == "Elf"):
+    elif (race_parse == "elf"):
         print("Str :",stats[0])
         print("Dex :",stats[1]+2)
         print("Con :",stats[2]-2)
         print("Int :",stats[3])
         print("Wis :",stats[4])
         print("Cha :",stats[5])
-    elif (race == "Half-Elf"):
+    elif (race_parse == "half-elf"):
         print("Str :",stats[0])
         print("Dex :",stats[1])
         print("Con :",stats[2])
         print("Int :",stats[3])
         print("Wis :",stats[4])
         print("Cha :",stats[5])
-    elif (race == "Half-Orc"):
+    elif (race_parse == "half-orc"):
         print("Str :",stats[0]+2)
         print("Dex :",stats[1])
         print("Con :",stats[2])
         print("Int :",stats[3]-2)
         print("Wis :",stats[4])
         print("Cha :",stats[5]-2)
-    elif (race == "Halfling"):
+    elif (race_parse == "halfling"):
         print("Str :",stats[0]-2)
         print("Dex :",stats[1]+2)
         print("Con :",stats[2])
         print("Int :",stats[3])
         print("Wis :",stats[4])
         print("Cha :",stats[5])
-    elif (race == "Gnome"):
+    elif (race == "gnome"):
         print("Str :",stats[0]-2)
         print("Dex :",stats[1]+2)
         print("Con :",stats[2])
